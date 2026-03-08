@@ -1,0 +1,18 @@
+{
+  "name": "かける - 学習アプリ",
+  "short_name": "かける",
+  "description": "小学4年生の国語・都道府県学習アプリ",
+  "start_url": "/kakeru/",
+  "display": "standalone",
+  "background_color": "#FFF9F0",
+  "theme_color": "#FF8C42",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "/kakeru/cat-icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

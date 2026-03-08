@@ -1,0 +1,74 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100dvh;
+  background: #FFF9F0;
+  overscroll-behavior: none;
+  font-family: 'BIZ UDPGothic', 'Hiragino Kaku Gothic ProN', 'Meiryo', sans-serif;
+  font-size: 18px;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* 教科書体クラス */
+.kyokasho {
+  font-family: 'BIZ UDPMincho', 'Hiragino Mincho ProN', 'Yu Mincho', serif;
+}
+
+button {
+  font-family: inherit;
+}
+
+/* アニメーション */
+@keyframes pop {
+  0% { transform: scale(0.8); opacity: 0; }
+  60% { transform: scale(1.1); }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+}
+
+@keyframes sparkle-0 {
+  0% { transform: translate(0, 0) scale(0); opacity: 0; }
+  50% { opacity: 1; }
+  100% { transform: translate(-20px, -30px) scale(1.2); opacity: 0; }
+}
+
+@keyframes sparkle-1 {
+  0% { transform: translate(0, 0) scale(0); opacity: 0; }
+  50% { opacity: 1; }
+  100% { transform: translate(20px, -25px) scale(1); opacity: 0; }
+}
+
+@keyframes sparkle-2 {
+  0% { transform: translate(0, 0) scale(0); opacity: 0; }
+  50% { opacity: 1; }
+  100% { transform: translate(-15px, 20px) scale(1.1); opacity: 0; }
+}
+
+@keyframes sparkle-3 {
+  0% { transform: translate(0, 0) scale(0); opacity: 0; }
+  50% { opacity: 1; }
+  100% { transform: translate(25px, 15px) scale(1); opacity: 0; }
+}
+
+/* スクロール */
+#app {
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+/* iPad向けセーフエリア */
+@supports (padding: env(safe-area-inset-bottom)) {
+  body {
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+}
